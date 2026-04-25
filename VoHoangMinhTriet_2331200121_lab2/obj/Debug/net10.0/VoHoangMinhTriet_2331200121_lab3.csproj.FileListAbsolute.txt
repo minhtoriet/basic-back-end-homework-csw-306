@@ -1,0 +1,14 @@
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/bin/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/bin/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.deps.json
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/bin/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.runtimeconfig.json
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/bin/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.dll
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/bin/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.pdb
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.AssemblyInfoInputs.cache
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.AssemblyInfo.cs
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.csproj.CoreCompileInputs.cache
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.dll
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/refint/VoHoangMinhTriet_2331200121_lab3.dll
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.pdb
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/VoHoangMinhTriet_2331200121_lab3.genruntimeconfig.cache
+/Users/trietvo/Documents/nam3/csw306/VoHoangMinhTriet_2331200121_lab3/obj/Debug/net10.0/ref/VoHoangMinhTriet_2331200121_lab3.dll
