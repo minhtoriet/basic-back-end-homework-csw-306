@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab3.csproj": {}
+    "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab2.csproj": {}
   },
   "projects": {
-    "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab3.csproj": {
+    "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab3.csproj",
-        "projectName": "VoHoangMinhTriet_2331200121_lab3",
-        "projectPath": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab3.csproj",
+        "projectUniqueName": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab2.csproj",
+        "projectName": "VoHoangMinhTriet_2331200121_lab2",
+        "projectPath": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\VoHoangMinhTriet_2331200121_lab2.csproj",
         "packagesPath": "C:\\Users\\trie\\.nuget\\packages\\",
         "outputPath": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\obj\\",
         "projectStyle": "PackageReference",
@@ -30,7 +30,6 @@
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -49,7 +48,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",

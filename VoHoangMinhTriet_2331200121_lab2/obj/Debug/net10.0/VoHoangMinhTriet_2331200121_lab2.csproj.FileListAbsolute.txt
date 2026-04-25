@@ -1,0 +1,15 @@
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\bin\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.exe
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\bin\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.deps.json
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\bin\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.runtimeconfig.json
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\bin\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.dll
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\bin\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.pdb
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.GeneratedMSBuildEditorConfig.editorconfig
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.AssemblyInfoInputs.cache
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.AssemblyInfo.cs
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.csproj.CoreCompileInputs.cache
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.sourcelink.json
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.dll
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\refint\VoHoangMinhTriet_2331200121_lab2.dll
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.pdb
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\VoHoangMinhTriet_2331200121_lab2.genruntimeconfig.cache
+F:\homework\basic-back-end-homework-csw-309\VoHoangMinhTriet_2331200121_lab2\obj\Debug\net10.0\ref\VoHoangMinhTriet_2331200121_lab2.dll

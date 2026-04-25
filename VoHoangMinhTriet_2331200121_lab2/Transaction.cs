@@ -1,4 +1,4 @@
-namespace VoHoangMinhTriet_2331200121_lab3;
+namespace VoHoangMinhTriet_2331200121_lab2;
 
 public abstract class Transaction
 {
