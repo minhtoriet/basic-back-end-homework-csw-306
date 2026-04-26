@@ -7,20 +7,16 @@
       "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\bookrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:bookrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +36,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T13:58:13.97Z",
               "IsPinned": true,
@@ -49,53 +45,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Book.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Book.cs",
-              "RelativeDocumentMoniker": "Book.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Book.cs",
-              "RelativeToolTip": "Book.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAIwCIAAAAJAAAAAAAAAA==",
+              "Title": "BookRecord.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookRecord.cs",
+              "RelativeDocumentMoniker": "BookRecord.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookRecord.cs",
+              "RelativeToolTip": "BookRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T14:09:33.266Z",
+              "WhenOpened": "2026-04-26T12:03:11.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Transaction.cs",
-              "RelativeDocumentMoniker": "Transaction.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Transaction.cs",
-              "RelativeToolTip": "Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Title": "Library.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Library.cs",
+              "RelativeDocumentMoniker": "Library.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Library.cs",
+              "RelativeToolTip": "Library.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T13:47:27.447Z",
+              "WhenOpened": "2026-04-26T12:02:05.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ReturnTransaction.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\ReturnTransaction.cs",
-              "RelativeDocumentMoniker": "ReturnTransaction.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\ReturnTransaction.cs",
-              "RelativeToolTip": "ReturnTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\NotificationService.cs",
+              "RelativeDocumentMoniker": "NotificationService.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\NotificationService.cs",
+              "RelativeToolTip": "NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T14:53:07.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BorrowTransaction.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BorrowTransaction.cs",
-              "RelativeDocumentMoniker": "BorrowTransaction.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BorrowTransaction.cs",
-              "RelativeToolTip": "BorrowTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T14:09:26.267Z",
+              "WhenOpened": "2026-04-26T12:01:23.173Z",
               "EditorCaption": ""
             }
           ]

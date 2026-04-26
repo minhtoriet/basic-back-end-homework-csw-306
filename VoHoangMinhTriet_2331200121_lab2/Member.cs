@@ -1,6 +1,6 @@
 namespace VoHoangMinhTriet_2331200121_lab2;
 
-public class Member
+public class Member : IPrintable, IMemberActions
 {
     private string _memberid;
     private string _name;
@@ -35,5 +35,18 @@ public class Member
     public virtual void DisplayInfo()
     {
         Console.WriteLine($"member id: {Memberid}, name: {Name}, email: {Email}");
+    }
+
+    public void PrintDetails()
+    {
+        Console.WriteLine($"member id: {Memberid}, name: {Name}, email: {Email}");
+    }
+    public void BorrowBook(Book book)
+    {
+        Console.WriteLine($"{book.DisplayInfo} successfully borrowed");
+    }
+    public void ReturnBook(Book book)
+    {
+        Console.WriteLine($"{book.DisplayInfo} successfully returned");
     }
 }

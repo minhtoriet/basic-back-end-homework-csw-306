@@ -1,5 +1,5 @@
 namespace VoHoangMinhTriet_2331200121_lab2;
-public class Book
+public class Book : IPrintable
 {
     private string _isbn;
     private string _title;
@@ -42,6 +42,9 @@ public class Book
     {
         Console.WriteLine($"ISBN: {_isbn}, title: {_title}, author: {_author}, year: {Year}, copies: {CopiesAvailable}"); 
     }
-    
+    public void PrintDetails()
+    {
+        Console.WriteLine($"ISBN: {_isbn}, title: {_title}, author: {_author}, year: {Year}, copies: {CopiesAvailable}");
+    }
 }
 

@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\bookrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:bookrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\librarycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:librarycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\bookclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:bookclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,13 +30,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T13:58:13.97Z",
               "IsPinned": true,
@@ -49,53 +45,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReturnTransaction.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\ReturnTransaction.cs",
-              "RelativeDocumentMoniker": "ReturnTransaction.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\ReturnTransaction.cs",
-              "RelativeToolTip": "ReturnTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Title": "BookRecord.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookRecord.cs",
+              "RelativeDocumentMoniker": "BookRecord.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookRecord.cs*",
+              "RelativeToolTip": "BookRecord.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T14:53:07.749Z",
+              "WhenOpened": "2026-04-26T11:44:52.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Book.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Book.cs",
-              "RelativeDocumentMoniker": "Book.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Book.cs",
-              "RelativeToolTip": "Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Title": "BookClass.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookClass.cs",
+              "RelativeDocumentMoniker": "BookClass.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookClass.cs",
+              "RelativeToolTip": "BookClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T14:09:33.266Z",
+              "WhenOpened": "2026-04-26T11:24:14.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BorrowTransaction.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BorrowTransaction.cs",
-              "RelativeDocumentMoniker": "BorrowTransaction.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BorrowTransaction.cs",
-              "RelativeToolTip": "BorrowTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Title": "LibraryCard.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\LibraryCard.cs",
+              "RelativeDocumentMoniker": "LibraryCard.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\LibraryCard.cs",
+              "RelativeToolTip": "LibraryCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T14:09:26.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Transaction.cs",
-              "RelativeDocumentMoniker": "Transaction.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Transaction.cs",
-              "RelativeToolTip": "Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T13:47:27.447Z",
+              "WhenOpened": "2026-04-26T11:23:12.07Z",
               "EditorCaption": ""
             }
           ]
