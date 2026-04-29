@@ -5,6 +5,7 @@ public class Member : IPrintable, IMemberActions
     private string _memberid;
     private string _name;
     private string _email;
+    public event Action<Book, Member>? OnBookBorrowed;
 
     public Member() {}
 
@@ -43,7 +44,13 @@ public class Member : IPrintable, IMemberActions
     }
     public void BorrowBook(Book book)
     {
+
+        Console.WriteLine($"{this.Name} borrowed {book.Title}");
+
+        BorrowTransaction bt = new BorrowTransaction("DefaultID", DateTime.Now, this, book);
+        bt.Execute();
         Console.WriteLine($"{book.DisplayInfo} successfully borrowed");
+        OnBookBorrowed?.Invoke(book, this);
     }
     public void ReturnBook(Book book)
     {

@@ -2,7 +2,7 @@
 {
     class BorrowTransaction : Transaction
     {
-        private Book? _bookBorrowed;
+        private Book _bookBorrowed;
         internal BorrowTransaction (string id, DateTime date, Member m, Book b) : base(id, date, m)
         {
             BookBorrowed = b;
@@ -14,7 +14,11 @@
         }
         public override void Execute()
         {
-            Console.WriteLine("Successfully handeled book borrowing");
+            if (BookBorrowed.CopiesAvailable <=0)
+            {
+                Console.WriteLine("out of books to borrow");
+            }
+            else Console.WriteLine("Successfully handeled book borrowing");
         }
     }
 }

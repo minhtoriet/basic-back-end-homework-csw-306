@@ -2,7 +2,7 @@
 
 internal class ReturnTransaction : Transaction
 {
-    private Book? _bookReturned;
+    private Book _bookReturned;
     internal ReturnTransaction (string id, DateTime date, Member m, Book b) : base(id, date, m)
     {
         BookReturned = b;
@@ -14,6 +14,7 @@ internal class ReturnTransaction : Transaction
     }
     public override void Execute()
     {
+        BookReturned.CopiesAvailable += 1;
         Console.WriteLine("Successfully handled book returning");
     }
 }

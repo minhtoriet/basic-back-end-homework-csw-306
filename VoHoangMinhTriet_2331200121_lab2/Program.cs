@@ -38,8 +38,8 @@ static class Program
 
 
         //Exercise 10
-        lb.OnBookBorrowed += ns.NotifyBookBorrow;
-        lb.BorrowBook(lb.Books[0], lb.Members[0]);
+        m.OnBookBorrowed += ns.NotifyBookBorrow;
+        m.BorrowBook(lb.Books[0]);
 
     }
 }

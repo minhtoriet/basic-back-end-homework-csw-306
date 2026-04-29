@@ -5,7 +5,7 @@
         private string _libraryName;
         private List<Book> _books;
         private List<Member> _members;
-        public event Action<Book, Member>? OnBookBorrowed;
+        
 
         internal Library() 
         {
@@ -28,12 +28,7 @@
         public string LibraryName { get { return _libraryName; } set { _libraryName = value; } }
         public List<Book> Books { get { return _books; } set {_books = value; } }
         public List<Member> Members { get { return _members; } set {_members = value; } }
-        
-        public void BorrowBook(Book b, Member m)
-        {
-            Console.WriteLine($"{m.Name} borrowed {b.Title}");
-            OnBookBorrowed?.Invoke(b, m);
-        }
+
         public Library CopyLibrary() 
         {
             return new Library(LibraryName, Books, Members);

@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\bookrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:bookrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|f:\\homework\\basic-back-end-homework-csw-309\\vohoangminhtriet_2331200121_lab2\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D03805C8-C82A-43E0-B76B-466EB6FFE63D}|VoHoangMinhTriet_2331200121_lab2.csproj|solutionrelative:member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,7 +28,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T13:58:13.97Z",
               "IsPinned": true,
@@ -45,40 +37,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookRecord.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookRecord.cs",
-              "RelativeDocumentMoniker": "BookRecord.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\BookRecord.cs",
-              "RelativeToolTip": "BookRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Member.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Member.cs",
+              "RelativeDocumentMoniker": "Member.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Member.cs",
+              "RelativeToolTip": "Member.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwCwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T12:03:11.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Library.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Library.cs",
-              "RelativeDocumentMoniker": "Library.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\Library.cs",
-              "RelativeToolTip": "Library.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T12:02:05.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\NotificationService.cs",
-              "RelativeDocumentMoniker": "NotificationService.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-309\\VoHoangMinhTriet_2331200121_lab2\\NotificationService.cs",
-              "RelativeToolTip": "NotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T12:01:23.173Z",
+              "WhenOpened": "2026-04-29T05:24:44.902Z",
               "EditorCaption": ""
             }
           ]
