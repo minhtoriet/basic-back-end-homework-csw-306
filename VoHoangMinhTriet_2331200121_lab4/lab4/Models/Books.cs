@@ -26,6 +26,9 @@ public class Books
     public int AvailableCopies { get; set; }
     [Required]
     public DateTime CreatedDate { get; set; }
-
+    [Required]
+    public bool IsActive { get; set; }
+    public string Avatar { get; set; }
+    public string Pdf { get; set; }
 }
 

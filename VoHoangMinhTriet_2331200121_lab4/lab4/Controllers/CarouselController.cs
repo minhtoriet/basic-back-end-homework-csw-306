@@ -7,8 +7,9 @@ using System.Linq.Expressions;
 
 namespace lab4.Controllers
 {
-    [ApiController]
+    
     [Route("api/[controller]")]
+    [ApiController]
     public class CarouselController : ControllerBase
     {
         private readonly LibraryManagementContext _context;
@@ -39,7 +40,7 @@ namespace lab4.Controllers
             if (carousel != null) return BadRequest();
             _context.Carousel.Add(c);
             await _context.SaveChangesAsync();
-            return c;
+            return CreatedAtAction(nameof(GetCarouselById),new {id = c.CarouselId}, c);
         }
         [HttpPut("{id}")]
         public async Task<ActionResult<Carousels>> EditCarousel (int id, [FromBody] Carousels c)
