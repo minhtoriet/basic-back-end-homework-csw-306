@@ -65,7 +65,7 @@ namespace lab4.Controllers
                 return BadRequest("where pdf file you fuck?");
             }
 
-            string imageFolder = Path.Combine(_env.WebRootPath, "uploads", "images");
+            string imageFolder = Path.Combine(_env.WebRootPath, "uploads", "images","books");
             string pdfFolder = Path.Combine(_env.WebRootPath, "uploads", "pdfs");
             Directory.CreateDirectory(imageFolder);
             Directory.CreateDirectory(pdfFolder);
@@ -81,7 +81,7 @@ namespace lab4.Controllers
                 {
                     await request.CoverImage.CopyToAsync(fileStream);
                 }
-                catch (IOException ioe)
+                catch (IOException)
                 {
                     return StatusCode(500);
                 }
@@ -93,7 +93,7 @@ namespace lab4.Controllers
                 {
                     await request.PdfFile.CopyToAsync(fileStream);
                 }
-                catch (IOException ioe)
+                catch (IOException)
                 {
                     return StatusCode(500);
                 }
@@ -109,14 +109,24 @@ namespace lab4.Controllers
                 IsActive = true,
                 AuthorId = request.AuthorId,
                 CreatedDate = DateTime.Now,
+                TotalCopies = request.TotalCopies,
+                AvailableCopies = request.TotalCopies,
                 Avatar = imgPhysicalPath,
                 Pdf = pdfPhysicalPath
             };
             _context.Add(book);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetBookById),new {title = book.Title},book);
+            return CreatedAtAction(nameof(GetBookById),new {id = book.BookId},book);
         }
-
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<Books>> UpdateBook (int id, [FromBody] Books newBook)
+        {
+            var book = await _context.Book.FindAsync(id);
+            if (book == null) { return NotFound(); }
+            _context.Entry(book).CurrentValues.SetValues(newBook);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteBookById(int id)
         {

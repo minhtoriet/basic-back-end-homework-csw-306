@@ -9,10 +9,11 @@ namespace lab4.Models
         public string ImageUrl { get; set; }
         [Required]
         public string Title { get; set; }
-        public string Description { get; set; }
-        public string LinkUrl { get; set; }
+        public string? Description { get; set; }
+        public string? LinkUrl { get; set; }
         [Required]
         public int Order { get; set; }
+        [Required]
         public bool IsActive { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }

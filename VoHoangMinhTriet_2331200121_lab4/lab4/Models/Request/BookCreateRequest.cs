@@ -8,7 +8,7 @@ public class BookCreateRequest
     public DateTime PublishedYear { get; set; }
     public int CategoryId { get; set; }
     public int AuthorId { get; set; }
-    
+    public int TotalCopies { get; set; }
     public IFormFile? CoverImage { get; set; }
     public IFormFile? PdfFile { get; set; }
 }

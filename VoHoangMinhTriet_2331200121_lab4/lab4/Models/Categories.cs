@@ -9,11 +9,11 @@ public class Categories
     public int CategoryId { get; set; }
     [Required]
     public string Name { get; set; }
-    public string Description { get; set; }
+    public string? Description { get; set; }
     [Required]
     public DateTime CreatedDate { get; set; }
     [Required]
     public bool IsActive { get; set; }
-    public string Avatar { get; set; }
+    public string? Avatar { get; set; }
 }
 

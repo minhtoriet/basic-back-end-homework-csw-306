@@ -16,7 +16,7 @@ public class Loans
     public DateTime LoanDate { get; set; }
     [Required]
     public DateTime DueDate { get; set; }
-    public DateTime ReturnDate { get; set; }
+    public DateTime? ReturnDate { get; set; }
     [Required]
     public int Status { get; set; }
 }

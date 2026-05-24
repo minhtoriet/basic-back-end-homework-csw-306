@@ -22,13 +22,15 @@ public class Books
     public int CategoryId { get; set; }
     [Required]
     public int AuthorId { get; set; }
+    [Required]
     public int TotalCopies { get; set; }
+    [Required]
     public int AvailableCopies { get; set; }
     [Required]
     public DateTime CreatedDate { get; set; }
     [Required]
     public bool IsActive { get; set; }
-    public string Avatar { get; set; }
-    public string Pdf { get; set; }
+    public string? Avatar { get; set; }
+    public string? Pdf { get; set; }
 }
 

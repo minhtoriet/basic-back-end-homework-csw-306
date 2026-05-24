@@ -15,7 +15,7 @@ public class BookQueryParameters
     }
 
     // Search and Filters
-    public string? Title { get; set; }
-    public int? CategoryId { get; set; }
-    public int? AuthorId { get; set; }
+    public string? Title { get; set; } = null;
+    public int? CategoryId { get; set; } = null;
+    public int? AuthorId { get; set; } = null;
 }

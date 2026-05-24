@@ -66,7 +66,7 @@ namespace lab4.Controllers
                     {
                         System.IO.File.Delete(physicalPath);
                     }
-                } catch (IOException ioe)
+                } catch (IOException)
                 {
                     return StatusCode(500, "Internal Server Error");
                 }
