@@ -20,8 +20,7 @@ namespace lab4.Controllers
         {
             _context = context;
         }
-        [HttpPost]
-        [Route("api/[controller]/register")]
+        [HttpPost("register")]
         public async Task<ActionResult> UserRegister([FromForm] UserCreateRequest request)
         {
             byte[] encoded;
@@ -48,8 +47,7 @@ namespace lab4.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
-        [HttpGet("{code}")]
-        [Route("api/[controller]/activate")] 
+        [HttpGet("activate")]
         public async Task<ActionResult> ActivateUser([FromQuery] UserActivateRequest request)
         {
             if (!string.IsNullOrWhiteSpace(request.ActivateCode)) return BadRequest("activation code cant be null or empty");

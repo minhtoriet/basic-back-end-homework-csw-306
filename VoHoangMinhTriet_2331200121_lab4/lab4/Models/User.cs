@@ -34,7 +34,7 @@ public class User
     public bool IsDeleted { get; set; }
     [Required]
     public bool IsActive { get; set; } 
-    public string ActiveCode { get; set; }
+    public string? ActiveCode { get; set; }
     public string? Avatar { get; set; }
 }
 

@@ -2,6 +2,8 @@
 using lab4.Models.Context;
 using lab4.Models.Request;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 
 namespace lab4.Controllers
 {
@@ -11,9 +13,21 @@ namespace lab4.Controllers
     {
 
         private readonly LibraryManagementContext _context;
-        public CategoryController(LibraryManagementContext context)
+        private readonly IWebHostEnvironment _env;
+        public CategoryController(LibraryManagementContext context, IWebHostEnvironment env)
         {
+            _env = env;
             _context = context;
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Categories>> GetCategoryById(int id) 
+        {
+            var category = await _context.Category.FindAsync(id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return Ok(category);
         }
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categories>>> GetBooks([FromQuery] CategoryQueryParameter parameter)
@@ -24,8 +38,64 @@ namespace lab4.Controllers
             {
                 query = query.Where(c => c.Name == parameter.Name);
             }
-            List<Categories> list = await query.ToList();
-            return Ok(query.ToList());
+            List<Categories> list = await query.ToListAsync();
+            return Ok(list);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Categories>> AddCategory([FromBody] CategoryCreateRequest request)
+        {
+            string? imgPhysicalPath = null;
+            if (request.Avatar != null)
+            {
+                string imgFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "categories");
+                Directory.CreateDirectory(imgFolder);
+                string imgFileName = Guid.NewGuid() + Path.GetExtension(request.Avatar.FileName);
+                imgPhysicalPath = Path.Combine(imgFolder, imgFileName);
+                await using (var fileStream = new FileStream(imgPhysicalPath, FileMode.CreateNew))
+                {
+                    try
+                    {
+                        await request.Avatar.CopyToAsync(fileStream);
+                    }
+                    catch (IOException)
+                    {
+                        return StatusCode(500);
+                    }
+                }
+            }
+            var category = new Categories()
+            {
+                Name = request.Name,
+                Description = request.Description,
+                Avatar = imgPhysicalPath,
+                CreatedDate = DateTime.Now,
+                IsActive = true
+            };
+            _context.Category.Add(category);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetCategoryById), new { id = category.CategoryId }, category);
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> EditCategory(int id,[FromForm] CategoryUpdateRequest request)
+        {
+            var category = await _context.Category.FindAsync(id);
+            if (category == null) return NotFound();
+            category.Name = request.Name;
+            category.Description = request.Description;
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpPatch("{id:int}/toggle")]
+        public async Task<ActionResult> ToggleCategory(int id)
+        {
+            var category = await _context.Category.FindAsync(id);
+            if (category == null) return NotFound();
+            category.IsActive = !category.IsActive;
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
     }
 }

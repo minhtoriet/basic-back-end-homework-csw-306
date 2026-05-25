@@ -38,7 +38,7 @@ namespace lab4.Controllers
         [HttpPost]
         public async Task<ActionResult<Authors>> CreateAuthor([FromForm] AuthorCreateRequest request)
         {
-            string imgPhysicalPath = null;
+            string? imgPhysicalPath = null;
             if (request.CoverImage != null)
             {
                 string imageFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "authors");
