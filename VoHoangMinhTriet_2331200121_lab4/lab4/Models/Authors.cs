@@ -4,9 +4,12 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace lab4.Models;
 
+[Table("Authors")]
+
 public class Authors
 {
-    public ICollection<Books> BookList { get; set; }
+    public ICollection<Books> BookList { get; set; } = new List<Books>();
+    [Key]
     public int AuthorId { get; set; }
     [StringLength(100, ErrorMessage = "maximum 100 characters")]
     [Required]

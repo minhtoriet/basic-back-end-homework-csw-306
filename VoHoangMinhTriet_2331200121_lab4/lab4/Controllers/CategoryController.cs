@@ -45,13 +45,15 @@ namespace lab4.Controllers
         [HttpPost]
         public async Task<ActionResult<Categories>> AddCategory([FromBody] CategoryCreateRequest request)
         {
-            string? imgPhysicalPath = null;
+            string? imgDatabasePath = null;
             if (request.Avatar != null)
             {
-                string imgFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "categories");
-                Directory.CreateDirectory(imgFolder);
+                string relativeImgFolder = Path.Combine("uploads", "images", "categories");
+                string absoluteImgFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "categories");
+                Directory.CreateDirectory(absoluteImgFolder);
                 string imgFileName = Guid.NewGuid() + Path.GetExtension(request.Avatar.FileName);
-                imgPhysicalPath = Path.Combine(imgFolder, imgFileName);
+                string imgPhysicalPath = Path.Combine(absoluteImgFolder, imgFileName);
+                imgDatabasePath = "/" + Path.Combine(relativeImgFolder, imgFileName).Replace("\\", "/");
                 await using (var fileStream = new FileStream(imgPhysicalPath, FileMode.CreateNew))
                 {
                     try
@@ -68,7 +70,7 @@ namespace lab4.Controllers
             {
                 Name = request.Name,
                 Description = request.Description,
-                Avatar = imgPhysicalPath,
+                Avatar = imgDatabasePath,
                 CreatedDate = DateTime.Now,
                 IsActive = true
             };

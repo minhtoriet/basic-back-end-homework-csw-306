@@ -4,10 +4,12 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace lab4.Models;
 
+[Table("User")]
 public class User
 {
-    
-    public ICollection<Loans> LoanList { get; set; }
+
+    public ICollection<Loans> LoanList { get; set; } = new List<Loans>();
+    [Key]
     public int UserId { get; set; }
     [StringLength(200, ErrorMessage = "maximun 200 characters")]
     [Required]

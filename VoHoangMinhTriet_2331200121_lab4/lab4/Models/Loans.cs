@@ -2,11 +2,14 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace lab4.Models;
+
+[Table("Loans")]
 public class Loans
 {
 
     public Books Book { get; set; } 
     public User User { get; set; }
+    [Key]
     public int LoanId { get; set; }
     [Required]
     public int UserId { get; set; }

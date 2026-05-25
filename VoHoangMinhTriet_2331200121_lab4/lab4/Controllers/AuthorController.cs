@@ -38,13 +38,19 @@ namespace lab4.Controllers
         [HttpPost]
         public async Task<ActionResult<Authors>> CreateAuthor([FromForm] AuthorCreateRequest request)
         {
-            string? imgPhysicalPath = null;
+            string? imgDatabasePath = null;
             if (request.CoverImage != null)
             {
-                string imageFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "authors");
-                Directory.CreateDirectory(imageFolder);
+                string relativeImageFolder = Path.Combine("uploads", "images", "authors");
+
+                string absoluteImageFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "authors");
+
+                Directory.CreateDirectory(absoluteImageFolder);
+
                 string imgFileName = Guid.NewGuid() + Path.GetExtension(request.CoverImage.FileName);
-                imgPhysicalPath = Path.Combine(imageFolder, imgFileName);
+
+                string imgPhysicalPath = Path.Combine(absoluteImageFolder, imgFileName);
+                imgDatabasePath = "/" + Path.Combine(relativeImageFolder, imgFileName).Replace("\\","/");
                 await using (var fileStream = new FileStream(imgPhysicalPath, FileMode.CreateNew))
                 {
                     try
@@ -63,7 +69,7 @@ namespace lab4.Controllers
                 LastName = request.LastName,
                 CreatedDate = DateTime.Now,
                 IsActive = true,
-                Avatar = imgPhysicalPath
+                Avatar = imgDatabasePath
             };
             _context.Add(author);
             await _context.SaveChangesAsync();

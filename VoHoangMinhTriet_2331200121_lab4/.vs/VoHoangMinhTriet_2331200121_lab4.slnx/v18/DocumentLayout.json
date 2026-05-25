@@ -1,60 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab4\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B2AFC9B6-B883-AE0A-77C6-0B34E93D8B48}|lab4\\lab4.csproj|f:\\homework\\basic-back-end-homework-csw-306\\vohoangminhtriet_2331200121_lab4\\lab4\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2AFC9B6-B883-AE0A-77C6-0B34E93D8B48}|lab4\\lab4.csproj|solutionrelative:lab4\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2AFC9B6-B883-AE0A-77C6-0B34E93D8B48}|lab4\\lab4.csproj|f:\\homework\\basic-back-end-homework-csw-306\\vohoangminhtriet_2331200121_lab4\\lab4\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2AFC9B6-B883-AE0A-77C6-0B34E93D8B48}|lab4\\lab4.csproj|solutionrelative:lab4\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "F:\\homework\\306\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab4\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedHeight": 212,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab4\\lab4\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "lab4\\Controllers\\CategoryController.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab4\\lab4\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "lab4\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T06:31:45.839Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 212,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Categories.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab4\\lab4\\Models\\Categories.cs",
-              "RelativeDocumentMoniker": "lab4\\Models\\Categories.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab4\\lab4\\Models\\Categories.cs",
-              "RelativeToolTip": "lab4\\Models\\Categories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T06:29:38.041Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

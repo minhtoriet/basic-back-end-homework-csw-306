@@ -1,11 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace lab4.Models;
 
+[Table("Categories")]
 public class Categories
 {
- 
-    public ICollection<Books> BookList { get; set; }
+
+    public ICollection<Books> BookList { get; set; } = new List<Books>();
+    [Key]
     public int CategoryId { get; set; }
     [Required]
     public string Name { get; set; }
