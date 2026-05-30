@@ -10,7 +10,7 @@ public class Books
     public Authors Author { get; set; }
     public Categories Category { get; set; }
     [Key]
-    
+
     public int BookId { get; set; }
     [Required]
     public string Title { get; set; }

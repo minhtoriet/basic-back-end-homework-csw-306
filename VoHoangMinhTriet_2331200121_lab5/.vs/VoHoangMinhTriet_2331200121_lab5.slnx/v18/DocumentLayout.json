@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|f:\\homework\\basic-back-end-homework-csw-306\\vohoangminhtriet_2331200121_lab5\\vohoangminhtriet_2331200121_lab5\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|solutionrelative:vohoangminhtriet_2331200121_lab5\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|f:\\homework\\basic-back-end-homework-csw-306\\vohoangminhtriet_2331200121_lab5\\vohoangminhtriet_2331200121_lab5\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|solutionrelative:vohoangminhtriet_2331200121_lab5\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|f:\\homework\\basic-back-end-homework-csw-306\\vohoangminhtriet_2331200121_lab5\\vohoangminhtriet_2331200121_lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|solutionrelative:vohoangminhtriet_2331200121_lab5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|f:\\homework\\basic-back-end-homework-csw-306\\vohoangminhtriet_2331200121_lab5\\vohoangminhtriet_2331200121_lab5\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13BFE79-FD42-CE3A-BC4D-421770132899}|VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5.csproj|solutionrelative:vohoangminhtriet_2331200121_lab5\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Models\\User.cs",
-              "RelativeDocumentMoniker": "VoHoangMinhTriet_2331200121_lab5\\Models\\User.cs",
-              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Models\\User.cs",
-              "RelativeToolTip": "VoHoangMinhTriet_2331200121_lab5\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Program.cs",
+              "RelativeDocumentMoniker": "VoHoangMinhTriet_2331200121_lab5\\Program.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Program.cs",
+              "RelativeToolTip": "VoHoangMinhTriet_2331200121_lab5\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T03:41:51.541Z",
+              "WhenOpened": "2026-05-30T13:03:29.519Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "VoHoangMinhTriet_2331200121_lab5\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "VoHoangMinhTriet_2331200121_lab5\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:44:43.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "VoHoangMinhTriet_2331200121_lab5\\Controllers\\BookController.cs",
+              "ToolTip": "F:\\homework\\basic-back-end-homework-csw-306\\VoHoangMinhTriet_2331200121_lab5\\VoHoangMinhTriet_2331200121_lab5\\Controllers\\BookController.cs",
+              "RelativeToolTip": "VoHoangMinhTriet_2331200121_lab5\\Controllers\\BookController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwEcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:44:47.595Z",
               "EditorCaption": ""
             }
           ]

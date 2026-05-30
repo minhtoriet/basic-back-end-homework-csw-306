@@ -1,12 +1,13 @@
-﻿using VoHoangMinhTriet_2331200121_lab5.Models;
-using VoHoangMinhTriet_2331200121_lab5.Models.Context;
-using VoHoangMinhTriet_2331200121_lab5.Models.Request;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
+using System.Security.Claims;
+using VoHoangMinhTriet_2331200121_lab5.Models;
+using VoHoangMinhTriet_2331200121_lab5.Models.Context;
+using VoHoangMinhTriet_2331200121_lab5.Models.Request;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Controllers
-{ 
+{
     [ApiController]
     [Route("api/[controller]")]
     public class LoanController : ControllerBase
@@ -34,6 +35,18 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             }
             var loans = await query.ToListAsync();
             return Ok(loans);
+        }
+        [HttpGet("history")]
+        [Authorize("MinimumMembership")]
+        public async Task<ActionResult<IEnumerable<Loans>>> GetLoanHistory()
+        {
+            string? userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrWhiteSpace(userIdStr) || !int.TryParse(userIdStr, out int userId))
+            {
+                return Unauthorized("user id not identified");
+            }
+            List<Loans> history = await _context.Loan.Where(l => l.UserId == userId).ToListAsync();
+            return Ok(history);
         }
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Loans>> GetLoanById(int id)
@@ -73,3 +86,4 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
         }
     }
 }
+

@@ -1,8 +1,8 @@
-﻿using VoHoangMinhTriet_2331200121_lab5.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using VoHoangMinhTriet_2331200121_lab5.Models;
 using VoHoangMinhTriet_2331200121_lab5.Models.Context;
 using VoHoangMinhTriet_2331200121_lab5.Models.Request;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Controllers
 {
@@ -12,7 +12,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
     {
         private readonly LibraryManagementContext _context;
         private readonly IWebHostEnvironment _env;
-        public AuthorController (LibraryManagementContext context, IWebHostEnvironment env)
+        public AuthorController(LibraryManagementContext context, IWebHostEnvironment env)
         {
             _env = env;
             _context = context;
@@ -50,7 +50,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
                 string imgFileName = Guid.NewGuid() + Path.GetExtension(request.CoverImage.FileName);
 
                 string imgPhysicalPath = Path.Combine(absoluteImageFolder, imgFileName);
-                imgDatabasePath = "/" + Path.Combine(relativeImageFolder, imgFileName).Replace("\\","/");
+                imgDatabasePath = "/" + Path.Combine(relativeImageFolder, imgFileName).Replace("\\", "/");
                 await using (var fileStream = new FileStream(imgPhysicalPath, FileMode.CreateNew))
                 {
                     try

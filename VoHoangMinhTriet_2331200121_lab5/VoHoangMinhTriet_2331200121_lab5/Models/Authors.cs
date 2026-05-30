@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Security.Cryptography.X509Certificates;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Models;
 
@@ -13,7 +12,7 @@ public class Authors
     public int AuthorId { get; set; }
     [StringLength(100, ErrorMessage = "maximum 100 characters")]
     [Required]
-    public string FirstName { get; set; } 
+    public string FirstName { get; set; }
     [StringLength(100, ErrorMessage = "maximum 100 characters")]
     [Required]
     public string LastName { get; set; }
@@ -29,7 +28,7 @@ public class Authors
     [Required]
     public DateTime CreatedDate { get; set; }
     [Required]
-    public bool IsActive { get; set; } 
+    public bool IsActive { get; set; }
     public string? Avatar { get; set; }
 
 }

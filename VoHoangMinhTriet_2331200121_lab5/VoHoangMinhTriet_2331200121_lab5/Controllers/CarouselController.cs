@@ -1,13 +1,11 @@
-﻿using VoHoangMinhTriet_2331200121_lab5.Models;
-using VoHoangMinhTriet_2331200121_lab5.Models.Context;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.IO;
-using System.Linq.Expressions;
+using VoHoangMinhTriet_2331200121_lab5.Models;
+using VoHoangMinhTriet_2331200121_lab5.Models.Context;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Controllers
 {
-    
+
     [Route("api/[controller]")]
     [ApiController]
     public class CarouselController : ControllerBase
@@ -34,16 +32,16 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             return Ok(carousel);
         }
         [HttpPost]
-        public async Task<ActionResult<Carousels>> AddCarousel (Carousels c)
+        public async Task<ActionResult<Carousels>> AddCarousel(Carousels c)
         {
             var carousel = await _context.Carousel.FirstOrDefaultAsync(u => u.CarouselId == c.CarouselId);
             if (carousel != null) return BadRequest();
             _context.Carousel.Add(c);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetCarouselById),new {id = c.CarouselId}, c);
+            return CreatedAtAction(nameof(GetCarouselById), new { id = c.CarouselId }, c);
         }
         [HttpPut("{id}")]
-        public async Task<ActionResult<Carousels>> EditCarousel (int id, [FromBody] Carousels c)
+        public async Task<ActionResult<Carousels>> EditCarousel(int id, [FromBody] Carousels c)
         {
             var carousel = await _context.Carousel.FirstOrDefaultAsync(u => u.CarouselId == id);
             if (carousel == null) return NotFound($"Item with ID {id} was not found.");
@@ -51,8 +49,8 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             await _context.SaveChangesAsync();
             return c;
         }
-        [HttpDelete("{id}")] 
-        public async Task<ActionResult> DeteleCarousel (int id)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeteleCarousel(int id)
         {
             var carousel = await _context.Carousel.FirstOrDefaultAsync(u => u.CarouselId == id);
             if (carousel == null) return NotFound($"Item with ID {id} was not found.");
@@ -66,7 +64,8 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
                     {
                         System.IO.File.Delete(physicalPath);
                     }
-                } catch (IOException)
+                }
+                catch (IOException)
                 {
                     return StatusCode(500, "Internal Server Error");
                 }

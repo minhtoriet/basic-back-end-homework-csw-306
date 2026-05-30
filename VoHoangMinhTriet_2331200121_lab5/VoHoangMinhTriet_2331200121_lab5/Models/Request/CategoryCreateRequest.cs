@@ -1,6 +1,6 @@
 namespace VoHoangMinhTriet_2331200121_lab5.Models.Request;
 
-public class CategoryCreateRequest 
+public class CategoryCreateRequest
 {
     public string Name { get; set; }
     public string? Description { get; set; }

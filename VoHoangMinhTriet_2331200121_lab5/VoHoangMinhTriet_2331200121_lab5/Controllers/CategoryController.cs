@@ -1,9 +1,9 @@
-﻿using VoHoangMinhTriet_2331200121_lab5.Models;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using VoHoangMinhTriet_2331200121_lab5.Models;
 using VoHoangMinhTriet_2331200121_lab5.Models.Context;
 using VoHoangMinhTriet_2331200121_lab5.Models.Request;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.EntityFrameworkCore;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Controllers
 {
@@ -20,7 +20,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             _context = context;
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<Categories>> GetCategoryById(int id) 
+        public async Task<ActionResult<Categories>> GetCategoryById(int id)
         {
             var category = await _context.Category.FindAsync(id);
             if (category == null)
@@ -43,6 +43,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
         }
 
         [HttpPost]
+        [Authorize("CanManageCategories")]
         public async Task<ActionResult<Categories>> AddCategory([FromBody] CategoryCreateRequest request)
         {
             string? imgDatabasePath = null;
@@ -80,7 +81,8 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> EditCategory(int id,[FromForm] CategoryUpdateRequest request)
+        [Authorize("CanManageCategories")]
+        public async Task<ActionResult> EditCategory(int id, [FromForm] CategoryUpdateRequest request)
         {
             var category = await _context.Category.FindAsync(id);
             if (category == null) return NotFound();
@@ -91,6 +93,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
         }
 
         [HttpPatch("{id:int}/toggle")]
+        [Authorize("CanManageCategories")]
         public async Task<ActionResult> ToggleCategory(int id)
         {
             var category = await _context.Category.FindAsync(id);

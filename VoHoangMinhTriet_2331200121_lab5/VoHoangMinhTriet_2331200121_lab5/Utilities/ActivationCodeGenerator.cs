@@ -1,5 +1,4 @@
-﻿using System.Net.NetworkInformation;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Utilities

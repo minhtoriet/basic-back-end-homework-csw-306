@@ -7,7 +7,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Models;
 public class Loans
 {
 
-    public Books Book { get; set; } 
+    public Books Book { get; set; }
     public User User { get; set; }
     [Key]
     public int LoanId { get; set; }
@@ -24,4 +24,3 @@ public class Loans
     public int Status { get; set; }
 }
 
- 

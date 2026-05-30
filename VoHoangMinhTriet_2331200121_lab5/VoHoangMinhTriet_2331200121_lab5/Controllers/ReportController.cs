@@ -1,7 +1,8 @@
-using VoHoangMinhTriet_2331200121_lab5.Models.Context;
-using VoHoangMinhTriet_2331200121_lab5.Models.Request;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using VoHoangMinhTriet_2331200121_lab5.Models.Context;
+using VoHoangMinhTriet_2331200121_lab5.Models.Request;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Controllers;
 
@@ -11,12 +12,13 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers;
 public class ReportController : ControllerBase
 {
     private readonly LibraryManagementContext _context;
-    
+
     public ReportController(LibraryManagementContext context)
     {
         _context = context;
     }
-    [HttpGet]
+    [HttpGet("top-borrowed")]
+    [Authorize(Policy = "AdminOrLibrarian")]
     public async Task<ActionResult<IEnumerable<MostBorrowedBooksDto>>> GetMostBorrowedBooks([FromQuery] MostBorrowedBooksParameter parameter)
     {
         List<MostBorrowedBooksDto> topBooks = await _context.Loan.Where(l => l.LoanDate >= parameter.FromDate && l.LoanDate <= parameter.ToDate)
@@ -29,5 +31,5 @@ public class ReportController : ControllerBase
         return Ok(topBooks);
     }
 
-    
+
 }

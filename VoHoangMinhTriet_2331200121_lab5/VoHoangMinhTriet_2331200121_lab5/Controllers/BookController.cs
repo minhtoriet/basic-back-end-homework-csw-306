@@ -1,10 +1,9 @@
-﻿using System.Net;
-using VoHoangMinhTriet_2331200121_lab5.Models;
-using VoHoangMinhTriet_2331200121_lab5.Models.Context;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using VoHoangMinhTriet_2331200121_lab5.Models;
+using VoHoangMinhTriet_2331200121_lab5.Models.Context;
 using VoHoangMinhTriet_2331200121_lab5.Models.Request;
-using System.IO;
 
 namespace VoHoangMinhTriet_2331200121_lab5.Controllers
 {
@@ -14,8 +13,8 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
     {
         private readonly LibraryManagementContext _context;
         private readonly IWebHostEnvironment _env;
-        
-        public BookController (LibraryManagementContext context, IWebHostEnvironment env)
+
+        public BookController(LibraryManagementContext context, IWebHostEnvironment env)
         {
             _env = env;
             _context = context;
@@ -76,7 +75,8 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             return Ok(bookList);
         }
 
-        [HttpPost]
+        [HttpPost("upload")]
+        [Authorize(Policy = "VerifiedEmailOnly")]
         public async Task<ActionResult<Books>> CreateBook([FromForm] BookCreateRequest request)
         {
             if (request.CoverImage == null || request.CoverImage.Length == 0)
@@ -92,7 +92,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             string relativeImageFolder = Path.Combine("uploads", "images", "books");
             string relativePdfFolder = Path.Combine("uploads", "pdfs");
 
-            string absoluteImageFolder = Path.Combine(_env.WebRootPath, "uploads", "images","books");
+            string absoluteImageFolder = Path.Combine(_env.WebRootPath, "uploads", "images", "books");
             string absolutePdfFolder = Path.Combine(_env.WebRootPath, "uploads", "pdfs");
             Directory.CreateDirectory(absoluteImageFolder);
             Directory.CreateDirectory(absolutePdfFolder);
@@ -115,7 +115,7 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
                 {
                     return StatusCode(500);
                 }
-                
+
             }
             await using (var fileStream = new FileStream(pdfPhysicalPath, FileMode.CreateNew))
             {
@@ -146,11 +146,11 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
             };
             _context.Add(book);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetBookById),new {id = book.BookId},book);
+            return CreatedAtAction(nameof(GetBookById), new { id = book.BookId }, book);
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<Books>> UpdateBook (int id, [FromBody] Books newBook)
+        public async Task<ActionResult<Books>> UpdateBook(int id, [FromBody] Books newBook)
         {
             var book = await _context.Book.FindAsync(id);
             if (book == null) { return NotFound(); }
@@ -192,7 +192,8 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
                 try
                 {
                     System.IO.File.Delete(absolutePath);
-                } catch (IOException) {return StatusCode(500); }
+                }
+                catch (IOException) { return StatusCode(500); }
             }
             if (!string.IsNullOrWhiteSpace(book.Pdf))
             {
@@ -209,5 +210,5 @@ namespace VoHoangMinhTriet_2331200121_lab5.Controllers
         }
 
     }
-    
+
 }

@@ -2,6 +2,7 @@
 
 namespace VoHoangMinhTriet_2331200121_lab5.Models.Context
 {
+
     public class LibraryManagementContext : DbContext
     {
         public LibraryManagementContext(DbContextOptions<LibraryManagementContext> options) : base(options) { }
@@ -16,7 +17,10 @@ namespace VoHoangMinhTriet_2331200121_lab5.Models.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<UserRole>().HasKey(ur => new { ur.UserId, ur.RoleId });
+
+
         }
     }
 }
